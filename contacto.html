@@ -1,0 +1,63 @@
+<!--
+Autor: Jagoba Barberan De Abajo
+Asignatura: LMGSI
+Unidad: UD 2
+Tarea: Tarea evaluativa 2 (80%).
+Enlace a la autoevaluacion: 
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <!--Header para el titulo de la pagina web-->
+    <header>
+        <h1>Recetas Jagoba Barberan</h1>
+    </header>
+
+    <!--Nav para la barra de los menus de la pagina web-->
+    <nav>
+        <ul id="lista">
+            <li class="elementolista"><a href="index.html">INICIO</a></li>
+            <li class="elementolista"><a href="recetas.html">RECETAS</a></li>
+            <li class="elementolista"><a href="noticias.html">NOTICIAS</a></li>
+            <li class="elementolista"><a href="contacto.html">CONTACTO</a></li>
+        </ul>
+    </nav>
+
+    <div id="formulario">
+        <form class="formulario" action="mailto: Jbarberan@birt.eus" method="post">
+            <fieldset class="fieldset">
+                <legend>Contactar con Jagoba Barberan </legend>
+                <label class="labelformulario" for="name">Nombre:</label>
+                <input class="inputformulario" type="text" id="nombre" name="nombre" placeholder="Nombre...">
+                <label class="labelformulario" for="segundonombre">Apellido</label>
+                <input class="inputformulario" type="text" name="apellido" id="apellido" placeholder="Apellido...">
+                <label class="labelformulario" for="tipo">Tipo de consulta: </label>
+                <select class="selectform" name="tipo" id="tipoconsulta">
+                    <option value=""></option>
+                    <option value="sugerencia">Sugerencia</option>
+                    <option value="critica">Critica</option>
+                    <option value="negocio">Negocio</option>
+                </select>
+                <label class="labelformulario" for="genero">Seleccione su genero: </label>
+                <div class="genero">
+                    <input type="radio" name="genero" value="H">Hombre
+                    <input type="radio" name="genero" value="M">Mujer
+                </div>
+                <label for="mensaje">Escriba su mensaje: </label>
+                <textarea class="textareaform" name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
+                <input type="submit" class="enviar" value="ENVIAR">
+            </fieldset>
+        </form>
+    </div>
+    <footer> Creado por Jagoba Barberan. &copy; 2022</footer>
+</body>
+</html>

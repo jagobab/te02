@@ -1,0 +1,374 @@
+/*
+Autor: Jagoba Barberan De Abajo
+Asignatura: LMGSI
+Unidad: UD 2
+Tarea: Tarea evaluativa 2 (80%).
+Enlace a la autoevaluacion: 
+*/
+
+/*Estilos generales para toda la pagina web*/
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+/*Estilos elbody de la pagina web*/
+body{
+    background-image: url(../img/fondoweb.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-repeat:repeat;
+}
+
+/*Estilos para los header, zona donde pone el titulo de la web y el fondo*/
+header{
+    width: 100%;
+    height: 10rem;
+    background-image: url(../img/fondoheader.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: whitesmoke;
+    text-shadow: 8px 8px 8px black;
+    font-size: 2rem;
+}
+
+/*Estilos para el footer de la web*/
+footer{
+    color: white;
+    text-shadow: 2px 2px 5px black;
+    font-size: 2rem;
+    font-weight: bold;
+    max-width: 100%;
+    text-align: center;
+    padding: 15px;
+    position: relative;
+    bottom: 0;
+    background-image: url(../img/footer.jpg);
+    box-shadow: 14px -14px 50px rgb(0, 128, 0);
+}
+
+/*Estilos para la zona del nav, donde se puede acceder a toda la web*/
+#lista{
+    background-color: red;
+    width: 100%;
+    height: 3rem;  
+    display: flex;  
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.elementolista{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    border: 2px solid black;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(145, 110, 58);
+}
+
+.elementolista a{
+    color: white;
+    font-size: 1.5rem;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.elementolista:hover{
+    box-shadow: -5px 5px 20px black inset;
+}
+
+/*Estilos para la presentacion de la pagina web, en la pagina principal el primer "rectangulo"*/
+#presentacion{
+    background-color: rgba(255, 252, 252, 0.788);
+    border: 5px  greenyellow outset;
+    border-radius: 50px;
+    display: flex;
+    max-width: 100%;
+    padding: 20px;
+    align-items: center;
+    justify-content: space-around;
+    margin: 2rem;
+}
+
+#presentacion img{
+    width: 20%;
+}
+
+#textopresentacion{
+    color: black;
+    font-size: 2rem;
+    width: 50%;
+}
+
+#asideprincipal{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 15%;
+    border: 2px solid black;
+    box-shadow: 1px 2px 3px black;
+    justify-content: center;
+}
+
+#asideprincipal:hover{
+    box-shadow: 3px 3px 3px greenyellow;
+}
+
+.enlacepresentacion{
+    margin: 0.7rem;
+    font-size: 1.4rem;
+    color: black;
+}
+
+.enlacepresentacion:visited{
+    color: black;
+}
+
+.enlacepresentacion:hover{
+    color: green;
+}
+
+.tituloaside{
+    font-size: 1.5rem;
+    text-decoration: underline;
+    color: red;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+/*Estilos para el texto que esta entre el nav y los apartados.*/
+.textoBienvenida{
+    color: white;
+    margin: 10px;
+    font-size: 2.5rem;
+    text-align: center;
+    text-shadow: 4px 4px 4px black;
+}
+
+/*Estilos para los diferentes apartados de toda la pagina web, seguun la pagina tienen diferentes estilos.*/
+.apartado{
+    max-width: 100%;
+    padding: 20px;
+    margin: 2rem;
+    border-radius: 50px;
+    border: 4px solid yellow;
+    background-color: rgba(53, 159, 252, 0.671);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    box-shadow: 10px 10px 10px black;
+    margin-bottom: 4rem;
+}
+
+.noti{
+    background-color: rgba(233, 14, 14, 0.671);
+    border: 4px solid black;
+}
+
+.noti:hover{
+    box-shadow: 10px 10px 10px rgb(47, 50, 255) !important;
+}
+
+.apartado:hover{
+    box-shadow: 10px 10px 10px greenyellow;
+}
+
+.foto_apartado{
+    float: left;
+    width: 20%;
+    height: 20%;
+}
+
+
+.texto_apartado{
+width: 70%;
+color: white;
+font-size: 2rem;
+}
+
+.tipo_apartado{
+    width: 100%;
+    font-size: 2rem;
+    text-decoration: underline;
+    text-align: center;
+    color: white;
+    margin-bottom: 1.2rem;
+}
+
+.continuar_apartado{
+    display: flex;
+    align-self: flex-end;
+    font-size: 1.3rem;
+    color: aliceblue;
+    border: 2px solid black;
+    border-radius: 2rem;
+    box-shadow: 2px 2px 2px black;
+    padding: 5px;
+    height: fit-content;
+}
+
+.continuar_apartado:hover{
+    box-shadow: 2px 2px 2px black inset;
+}
+
+/*Estilos para las diferentes recetas de la pagina web.*/
+#recetas{
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    margin: 2rem;
+    padding: 20px;
+}
+
+#tituloreceta{
+    display: flex;
+    justify-content: center;
+    color: white;
+    text-decoration: underline;
+    font-size: 2rem;
+    text-shadow: 4px 4px 4px black;
+    margin-top: 1rem;
+}
+
+#fotoreceta{
+    align-self: center;
+    width: 500px;
+    justify-content: space-between;
+    display: flex;
+    margin: 2rem;
+}
+
+#listaingredientes{
+    color: wheat;
+    list-style: none;
+    max-width:50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 1rem;
+}
+
+.ingrediente{
+    font-size: 24px;
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0.5rem;
+}
+
+#preparacionreceta{
+    margin-top: 2rem;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: wheat;
+    margin-bottom: 2rem;
+}
+
+#preparacion{
+    display: flex;
+    align-self: center;
+    font-size: 2rem;
+    text-decoration: underline;
+    color: white;
+}
+#listaordenada{
+    display: flex;
+    flex-direction: column;
+    padding: 5rem;
+    font-size: 2rem;
+    list-style-type: upper-roman;
+}
+
+.pasopreparacion{
+margin-bottom: 2rem;
+}
+
+#textofinal{
+    font-weight: bold;
+}
+
+/*Estilos para el formulario de contacto de la pagina web*/
+#formulario{
+    max-width: 100%;
+    font-size: 2rem;
+    color: wheat;
+    padding: 2rem;
+    display: block;
+}
+
+.fieldset{
+    border: 2px solid rgb(4, 252, 128);
+    background-color: rgba(0, 0, 0, 0.664);
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 0 auto;
+    padding: 1.5rem;
+}
+
+.genero{
+    width: 50%;
+    display: flex;
+    margin: 1rem;
+}
+
+.genero input{
+    margin: 1rem;
+}
+
+.inputformulario{
+    width: 50%;
+    height: 2.5rem;
+    width: 20%;
+    font-size: 1.3rem;
+}
+
+.selectform{
+    width: 20%;
+    height: 2.5rem;
+    font-size: 1.3rem;
+}
+
+.labelformulario{
+    text-decoration: underline;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+}
+
+.labelformulario:first-of-type{
+    margin-top: 1rem;
+}
+
+.textareaform{
+    width: 50%;
+    font-size: 1.3rem;
+}
+
+/*Estilos para el boton de enviar el formulario*/
+.enviar{
+    width: 20%;
+    height: 4rem;
+    margin: 0 auto;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    color: black;
+    font-size: 1.5rem;
+    font-weight: bold;
+    background-color: rgb(73, 199, 238);
+    box-shadow: 2px 2px 2px blanchedalmond;
+}
+
+.enviar:hover{
+    font-size: 2rem;
+    background-color: rgb(64, 235, 72);
+    box-shadow: 4px 4px 4px rgb(1, 95, 1) inset;
+    color: white;
+    text-shadow: 2px 2px 2px yellowgreen;
+}
